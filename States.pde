@@ -90,7 +90,7 @@ void handleStateAfterAGame() {
   textXPos, 230);
   text("按一下回到首頁", 500, height-30);
   if(debug){
-saveTable(table, "data/"+chooseGameName[currentGame]+"/"+Filename+".csv");
+saveTable(table, "data/"+chooseGameName[currentGame]+"/"+Filename+".csv"); //已包含創建資料夾功能
 myPort.write("2");
 myPort.clear();
   }
